@@ -16,10 +16,11 @@ Run the following commands:
 Environment has been set up we are ready to run scripts! Database is availabel on localhost:5432!
 
 ### Load data to database.
-    `python scripts/load.py`
+    python scripts/load.py
 
 ### Generate reports
-    `python scripts/analyze.py`
-
+    python scripts/analyze.py
 
 Results are stored in reports folder!
+
+A dummy star schema is found under queries folder in star_schema.sql!
