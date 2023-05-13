@@ -163,3 +163,4 @@ cython_debug/
 .venv
 llintpy.yml
 __pycache__
+.mypy_cache
