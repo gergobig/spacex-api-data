@@ -1,5 +1,4 @@
 .PHONY: venv build check-lint lint
-ENV := $(if $(env),$(env),staging)
 
 venv:
 	python -m venv .venv
@@ -26,5 +25,5 @@ test:
 build-docker-image:
 	docker build -t gergobig/spacex-api-data .
 
-init-docker:
+open-db-for-localhost:
 	docker run -p 5432:5432 gergobig/spacex-api-data
