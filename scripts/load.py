@@ -37,10 +37,8 @@ SCHEMA = {
 
 
 def main():
-    data = pd.read_json('spacex.json')
     with PostgresConnector() as pg:
-        pg.load_data(data, table_name='api', schema=SCHEMA)
-    
+        pg.load_data(pd.read_json('spacex.json'), table_name='api', schema=SCHEMA)
 
 
 if __name__ == '__main__':
